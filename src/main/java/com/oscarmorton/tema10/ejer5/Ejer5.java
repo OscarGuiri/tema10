@@ -20,6 +20,7 @@ public class Ejer5 {
         INSUFICIENTE, NORMAL, GRADO1, GRADO2, GRADO3
     }
 
+
     public Ejer5(){
         lector = new Scanner(System.in);
         ArrayList<Paciente> pacientes = new ArrayList<>(5);
@@ -63,10 +64,10 @@ public class Ejer5 {
         for(int i  = 0; i < pacientes.size(); i++){
            masaCorporal = calculoMasaCorporal(pacientes.get(i));
             if(masaCorporal < 18.5){
-                System.out.println("Paciente numero " + (i + 1) + ": " + "Peso Insuficiente" );
+                System.out.println("Paciente numero " + (i + 1) + ": " + MASA.INSUFICIENTE );
             }
             if(masaCorporal > 18.5 && masaCorporal < 24.9){
-                System.out.println("Paciente numero " + (i + 1) + ": " + "Peso Normal" );
+                System.out.println("Paciente numero " + (i + 1) + ": " + MASA.NORMAL );
             }
             if(masaCorporal > 25 && masaCorporal < 26.9){
                 System.out.println("Paciente numero " + (i + 1) + ": " + "Sobrepeso grado I" );
