@@ -69,8 +69,21 @@ public class Paciente {
 
 
     }
+
+
     // GETTERS AND SETTERS
     public int getEdad() {
         return edad;
+    }
+    public sexo getS() {
+        return s;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public double getPeso() {
+        return peso;
     }
 }
