@@ -128,5 +128,23 @@ public class CambioMoneda {
         return conversion = (cambio.get(traduccionMoneda(opcion)) * euros);
 
     }
+    public void convertirTodo(HashMap<MONEDAS,Double> cambio, double euros){
+        System.out.printf("USD %.2f\n", + (cambio.get(MONEDAS.USD)) * euros);
+        System.out.printf("GPB %.2f\n", + (cambio.get(MONEDAS.GBP)) * euros);
+        System.out.printf("INR %.2f\n", + (cambio.get(MONEDAS.INR)) * euros);
+        System.out.printf("AUD %.2f\n", + (cambio.get(MONEDAS.AUD)) * euros);
+        System.out.printf("CAD %.2f\n", + (cambio.get(MONEDAS.CAD)) * euros);
+        System.out.printf("ARS %.2f\n", + (cambio.get(MONEDAS.ARS)) * euros);
+        System.out.printf("BOB %.2f\n", + (cambio.get(MONEDAS.BOB)) * euros);
+        System.out.printf("CLP %.2f\n", + (cambio.get(MONEDAS.CLP)) * euros);
+        System.out.printf("VEZ %.2f\n", + (cambio.get(MONEDAS.VEZ)) * euros);
+        System.out.printf("CRC %.2f\n", + (cambio.get(MONEDAS.CRC)) * euros);
+        System.out.printf("CUP %.2f\n", + (cambio.get(MONEDAS.CUP)) * euros);
+        System.out.printf("DOP %.2f\n", + (cambio.get(MONEDAS.GBP)) * euros);
+        System.out.printf("MXN %.2f\n", + (cambio.get(MONEDAS.GBP)) * euros);
+
+
+
+    }
 
 }

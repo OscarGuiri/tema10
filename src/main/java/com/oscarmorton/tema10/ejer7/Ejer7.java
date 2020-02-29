@@ -23,8 +23,8 @@ public class Ejer7 {
                     System.out.println(conversion);
                     break;
                 case 2:
-                    opcionMenuQueMoneda = cm.imprimeMenuQueMoneda();
-                    //convertirTodo
+                    euros = pedirEuros();
+                    cm.convertirTodo(cm.getCambioMoneda(),euros);
                     break;
                 case 0:
                     System.out.println("Hasta pronto!");
