@@ -20,7 +20,7 @@ public class Ejer7 {
                     opcionMenuQueMoneda = cm.imprimeMenuQueMoneda();
                     euros = pedirEuros();
                     conversion = cm.convertirMonedaUnica(cm.getCambioMoneda(),euros);
-                    System.out.println(conversion);
+                    System.out.printf("%.2f\n", conversion);
                     break;
                 case 2:
                     euros = pedirEuros();
