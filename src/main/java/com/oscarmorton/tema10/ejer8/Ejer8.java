@@ -16,19 +16,20 @@ public class Ejer8 {
                     introducirpalabra();
                     break;
                 case 2:
-                   modificarPalabra();
+                   d.modificarPalabra();
                     break;
                 case 3:
-                    //eliminarPalabra();
+                    eliminarPalabra();
                     break;
                 case 4:
                     System.out.println("Introduce la palabra: ");
                     palabra = lector.nextLine();
-                    definicion = d.getPalabra(palabra.toLowerCase());
+                    definicion = d.getDefinicionPalabra(palabra.toLowerCase());
                     System.out.println(definicion);
                     break;
                 case 5:
-                    //mostrarDicionario();
+
+                    d.mostrarDicionario();
                     break;
                 case 0:
                     System.out.println("Hasta pronto!");
@@ -42,6 +43,9 @@ public class Ejer8 {
 
     }
 
+    /**
+     * Para introducir palabras. Los valida tambien
+     */
     public void introducirpalabra(){
         lector = new Scanner(System.in);
 
@@ -62,7 +66,7 @@ public class Ejer8 {
 
         for(int i = 0; i < nPalabras; i++){
             System.out.println("Introduce la palabra");
-            palabra = lector.nextLine();
+            palabra = lector.nextLine().trim();
             System.out.println("Introduce su definicion");
             definicion = lector.nextLine();
             d.add(palabra.toLowerCase(), definicion.toLowerCase());
@@ -76,27 +80,20 @@ public class Ejer8 {
      */
 
 
-    public void modificarPalabra(){
+
+    /**
+     * Pide por salida una palabra y lo elimina despues de comprobar que exite
+     */
+    public void eliminarPalabra(){
         String palabra = "";
-        String definicion = "";
-        System.out.println("Que palabra quieres modificar?");
-        palabra = lector.nextLine().toLowerCase();
-
+        System.out.println("Cual palabra quieres eliminar?");
+        palabra = lector.nextLine().trim();
         if(d.existePalabra(palabra)){
-            System.out.println("Introduce la nueva definicion de la palabra " + palabra + ": ");
-            definicion = lector.nextLine().toLowerCase();
-            d.add(palabra,definicion);
-            System.out.println("Palabra Introducida correctamente");
+            d.remove(palabra);
         }else{
-            System.out.println("La palabra no exite");
+            System.out.println("No existe la palabra " + palabra);
         }
-
-
-
     }
-
-
-
 
     /**
      * Imprime el valor y valora si la entrada es lo que deberia.

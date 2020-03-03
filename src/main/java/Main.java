@@ -8,7 +8,7 @@ public class Main {
         //Ejer2 ejer2 = new Ejer2();
        // Ejer5 ejer5 = new Ejer5();
        // Ejer6 ejer6 = new Ejer6();
-       // Ejer7 ejer7 = new Ejer7();
+       //Ejer7 ejer7 = new Ejer7();
         Ejer8 eje8 = new Ejer8();
     }
 }
