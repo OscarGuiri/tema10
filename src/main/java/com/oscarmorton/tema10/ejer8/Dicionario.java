@@ -66,6 +66,7 @@ public class Dicionario {
             System.out.println(elementosDicionario.entrySet());
     }
     /**
+     *
      * Modifica la palabra introducida despues de comprobar que exite
      */
     public void modificarPalabra(){

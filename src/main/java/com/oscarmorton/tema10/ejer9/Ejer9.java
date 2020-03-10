@@ -44,6 +44,9 @@ public class Ejer9 {
                 case 6:
                     d.jugarJuego();
                     break;
+                case 7:
+                    //listarPuntuacion();
+                    break;
                 case 0:
                     System.out.println("Hasta pronto!");
                     break;
@@ -126,7 +129,7 @@ public class Ejer9 {
             System.out.println("4. Consultar palabra");
             System.out.println("5. Mostrar diccionario");
             System.out.println("6. Jugar juego");
-            System.out.println("7.Mostrar Puntuacion");
+            System.out.println("7. Mostrar Puntuacion");
             System.out.println("0. Salir de la aplicación.");
             System.out.println("Elige una opción: ");
             try {

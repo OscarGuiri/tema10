@@ -97,7 +97,7 @@ public class Dicionario {
                     System.out.println("Definicion: " + this.elementosDicionario.get(key));
                     System.out.println("Cual es la palabra?");
                     palabra = lector.nextLine();
-                    if (palabra == key) {
+                    if (palabra.equals(key)) {
                         System.out.println("CORRECTO!");
                         puntos++;
                     } else {
