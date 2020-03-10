@@ -1,14 +1,15 @@
-package com.oscarmorton.tema10.ejer8;
+package com.oscarmorton.tema10.ejer9;
 
 import utils.Lib;
 
 import java.util.Scanner;
 
-public class Ejer8 {
+public class Ejer9 {
     private Scanner lector;
     private Dicionario d = new Dicionario();
-    public Ejer8(){
+    public Ejer9(){
         int opcion = -1;
+        int puntos = 0;
         String palabra = "";
         String definicion = "";
         do {
@@ -39,6 +40,9 @@ public class Ejer8 {
 
                     d.mostrarDicionario();
                     Lib.pausa();
+                    break;
+                case 6:
+                    d.jugarJuego();
                     break;
                 case 0:
                     System.out.println("Hasta pronto!");
@@ -121,11 +125,13 @@ public class Ejer8 {
             System.out.println("3. Eliminar palabra");
             System.out.println("4. Consultar palabra");
             System.out.println("5. Mostrar diccionario");
+            System.out.println("6. Jugar juego");
+            System.out.println("7.Mostrar Puntuacion");
             System.out.println("0. Salir de la aplicación.");
             System.out.println("Elige una opción: ");
             try {
                 opcion = Integer.parseInt(lector.nextLine());
-                if(opcion < 0 || opcion > 5 ){
+                if(opcion < 0 || opcion > 7){
                     valido = false;
                 }else {
                     valido = true;
