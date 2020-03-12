@@ -3,6 +3,7 @@ package com.oscarmorton.tema10.ejemplo;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class Ejemplo {
     public Ejemplo(){
@@ -19,6 +20,9 @@ public class Ejemplo {
         System.out.println("Libros ordenados por titulo: ");
         System.out.println(libros.toString() + "\n");
 
+        System.out.println("Libros ordenados por pagina: ");
+        libros.sort(new Libro.CompararNumeroPaginas()); // Llamo a las clase Comparar Numeros Pagina de la clase Libros
+        System.out.println(libros.toString());
 
 
     }
