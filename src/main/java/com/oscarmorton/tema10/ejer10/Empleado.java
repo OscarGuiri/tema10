@@ -1,5 +1,6 @@
 package com.oscarmorton.tema10.ejer10;
 
+import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
 public class Empleado {
@@ -9,9 +10,10 @@ public class Empleado {
     private String apellido;
     private GregorianCalendar fechaNacimiento;
     private double sueldo;
-    private Hijos hijos;
+    private ArrayList<Hijos> hijos;
 
-    public Empleado(int id, String nombre, int nHijos, String apellido, GregorianCalendar fechaNacimiento, double sueldo, Hijos hijos) {
+
+    public Empleado(int id, String nombre, int nHijos, String apellido, GregorianCalendar fechaNacimiento, double sueldo, ArrayList<Hijos> hijos) {
         this.id = id;
         this.nHijos = 0;
         this.nombre = nombre;

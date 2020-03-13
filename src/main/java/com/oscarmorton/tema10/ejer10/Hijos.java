@@ -14,6 +14,7 @@ public class Hijos {
         this.edad = edad;
 
     }
+
     //GETTERS AND SETTER
     public String getNombre() {
         return nombre;

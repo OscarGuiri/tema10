@@ -59,7 +59,7 @@ public class Ejer10 {
         String apellido = "";
         GregorianCalendar fechaNaciemiento;
         double sueldo = 0;
-        Hijos hijos;
+       ArrayList<Hijos> hijos;
         System.out.println("***CREAR EMPLEADO***");
 
         //Pidiendo id. FALTA COMPROBAR SI EXISTE!
@@ -100,6 +100,9 @@ public class Ejer10 {
                             valido = false;
                         }
                     }while(!valido);
+                }else if(respuesta != 'n'){
+                    System.out.println("Por favor, dir si o no.");
+                    valido = false;
                 }
 
 
@@ -112,9 +115,10 @@ public class Ejer10 {
      * @param nHijos El hijo.
      * @return
      */
-    public Hijos crearHijo(int nHijos){
+    public ArrayList<Hijos> crearHijo(int nHijos){
         lector = new Scanner(System.in);
         Hijos h;
+        ArrayList hijosArray = new ArrayList(nHijos);
         String nombre = "";
         int edad = 0;
         boolean valido = true;
@@ -156,8 +160,11 @@ public class Ejer10 {
                     valido = false;
                 }
             }while(!valido);
+            h= new Hijos(nombre, edad); // Introduzco los detalles del hijo
+            hijosArray.add(h); // Lo añado a la lista.
         }
-        return h = new Hijos(nombre,edad);
+        return hijosArray;
+
     }
 
 
