@@ -1,5 +1,6 @@
 import com.oscarmorton.tema10.ejemplo.Ejemplo;
 import com.oscarmorton.tema10.ejer10.Ejer10;
+import com.oscarmorton.tema10.ejer11.Ejer11;
 import com.oscarmorton.tema10.ejer6.Ejer6;
 import com.oscarmorton.tema10.ejer7.Ejer7;
 import com.oscarmorton.tema10.ejer8.Ejer8;
@@ -15,7 +16,8 @@ public class Main {
         //Ejer8 eje8 = new Ejer8();
         //Ejer9 eje9 = new Ejer9();
         //Ejemplo ejer = new Ejemplo();
-        Ejer10 ejer10 = new Ejer10();
+        //Ejer10 ejer10 = new Ejer10();
+        Ejer11 ejer11 = new Ejer11();
 
     }
 }

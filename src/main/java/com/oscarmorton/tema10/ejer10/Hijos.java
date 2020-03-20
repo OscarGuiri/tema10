@@ -14,7 +14,10 @@ public class Hijos {
         this.edad = edad;
 
     }
-
+    public String hijosToString(){
+        return  String.format("Nombre hijo:  %-12s",nombre) + "\t" +
+                String.format("Edad hijo %-10s",edad);
+    }
     //GETTERS AND SETTER
     public String getNombre() {
         return nombre;
